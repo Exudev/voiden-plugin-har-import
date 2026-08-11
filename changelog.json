@@ -1,0 +1,19 @@
+[
+  {
+    "version": "v1.0.0",
+    "date": "11/08/2026",
+    "title": "Initial Release",
+    "description": "HTTP Archive (HAR) Importer plugin for converting browser network captures into native Voiden request collections.",
+    "changes": {
+      "Added": [
+        "Support for importing HTTP Archive (.har) JSON files",
+        "Automatic folder structuring based on page titles or domain hostnames",
+        "Conversion of headers, cookies, query parameters, and auth details",
+        "Body format support: JSON, XML, Multipart form-data, URL-encoded, and raw Text",
+        "Smart static asset filtering (ignore images, stylesheets, scripts, and fonts)",
+        "Batch creation throttling with interactive progress and cancellation",
+        "Integration with voiden-rest-api helpers"
+      ]
+    }
+  }
+]
