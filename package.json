@@ -1,14 +1,16 @@
 {
   "name": "@exudev/voiden-plugin-har-import",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "private": false,
   "description": "Import HTTP Archive (.har) files and automatically convert captured browser network requests into native Voiden request files",
-  "main": "./src/index.ts",
+  "main": "./src/plugin.ts",
   "scripts": {
-    "build": "node build.mjs",
+    "build": "node build.mjs && node build-main.mjs",
+    "build:main": "node build-main.mjs",
+    "zip": "node zip.mjs",
     "test": "vitest run",
-    "release": "node build.mjs && node generate-manifest.mjs"
+    "release": "node build.mjs && node build-main.mjs && node generate-manifest.mjs"
   },
   "peerDependencies": {
     "@tanstack/react-query": "^5.0.0",
@@ -21,6 +23,7 @@
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.0",
     "@voiden/sdk": "^1.0.10",
+    "esbuild": "^0.20.0",
     "jsdom": "^29.1.1",
     "lucide-react": "^0.460.0",
     "react": "^18.2.0",

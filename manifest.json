@@ -2,7 +2,7 @@
   "id": "har-import",
   "name": "HTTP Archive (HAR) Importer",
   "description": "Import HTTP Archive (.har) files and automatically convert captured browser network requests into native Voiden request files with full support for headers, cookies, query parameters, request bodies, and optional static asset filtering.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "voidenVersion": ">=2.0.0",
   "author": "Exudev",
   "enabled": true,
