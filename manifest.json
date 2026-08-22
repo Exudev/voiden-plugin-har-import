@@ -15,7 +15,7 @@
         {
           "id": "har-import-btn",
           "location": "sidebar-left",
-          "icon": "PackageImport",
+          "icon": "package-search",
           "tooltip": "Import HAR Collection",
           "description": "Opens file picker to select and import HTTP Archive (.har) JSON files"
         }
