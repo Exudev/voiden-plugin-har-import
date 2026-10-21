@@ -8,6 +8,9 @@
       "Changed": [
         "Scaffolded with official @voiden/create-plugin tooling (build.mjs, build-main.mjs, zip.mjs, generate-manifest.mjs)",
         "Added npm run zip and npm run release commands for installer/registry zip asset generation"
+      ],
+      "Fixed": [
+        "Release now includes the plugin bundle (har-import.js / main.js) and the installable zip; the v1.0.1 release was published without them, so it could not be installed"
       ]
     }
   },
